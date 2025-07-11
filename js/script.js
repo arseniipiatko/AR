@@ -85,7 +85,7 @@ startButton.addEventListener("click", () => {
 });
 
 // Function to display player data in the grid
-function displayPlayerData(rankList) {
+function displayPlayerData(rankList, targetYear) {
   const existingItems = playerGrid.querySelectorAll(".grid-item");
   existingItems.forEach((item) => item.remove());
 
@@ -96,6 +96,11 @@ function displayPlayerData(rankList) {
     const rankCell = document.createElement("div");
     rankCell.className = "grid-item";
     rankCell.textContent = ranks[rankList[i]];
+
+    if (i === targetYear) {
+      yearCell.classList.add("selected-data");
+      rankCell.classList.add("selected-data");
+    }
 
     playerGrid.appendChild(yearCell);
     playerGrid.appendChild(rankCell);
@@ -128,7 +133,7 @@ function generateRanks(year, rank) {
     }
     rankList.push(currentRank);
   }
-  displayPlayerData(rankList);
+  displayPlayerData(rankList, targetYear);
 }
 
 function validateInputs() {

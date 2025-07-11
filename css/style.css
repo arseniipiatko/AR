@@ -190,6 +190,10 @@ footer {
   user-select: none;
 }
 
+.selected-data {
+  background-color: #444;
+}
+
 .hidden {
   display: none;
 }
