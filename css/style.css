@@ -139,7 +139,7 @@ footer {
   max-width: 600px;
 }
 
-#user-input {
+.user-input {
   font-size: 1.5rem;
   padding: 10px;
   text-align: center;
@@ -150,9 +150,10 @@ footer {
   color: white;
 }
 
-#input-label {
+.input-label {
   font-size: 1.5rem;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Grid styling for player data */

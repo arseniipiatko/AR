@@ -28,13 +28,31 @@
       <!-- Input section -->
       <div class="input-section" id="input-section">
         <!-- Number input -->
-        <input type="text" id="user-input" text-align="center" value="1" />
-        <label id="input-label" for="user-input">Number of attempts</label>
+        <input
+          type="text"
+          class="user-input"
+          id="user-input-age"
+          text-align="center"
+          value="18"
+        />
+        <label id="input-label-age" class="input-label" for="user-input-age"
+          >Age</label
+        >
+        <input
+          type="text"
+          class="user-input"
+          id="user-input-rank"
+          text-align="center"
+          value="1"
+        />
+        <label id="input-label-rank" class="input-label" for="user-input-rank"
+          >Rank</label
+        >
       </div>
 
       <div class="player-grid">
+        <div class="grid-header" id="year-header">Year:</div>
         <div class="grid-header" id="rank-header">Rank:</div>
-        <div class="grid-header" id="qnt-header">Quantity:</div>
 
         <!-- 100 rows of data, placeholder cells -->
         <div class="grid-item">Player 1</div>
